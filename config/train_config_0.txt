@@ -1,0 +1,44 @@
+# Basic parameters
+snr_min = 0
+snr_max = 24
+power_tx = 1.0
+seed = 3407
+
+# learning rate related parameters
+lr_initial = 0.001
+lr_scheduler_type = MultiStep
+lr_decay_rate = 0.5
+decay_step_list = 20, 40
+lr_mine = 0.0005
+lr_club = 0.0005
+
+# optimizer related parameters
+optimizer = adam
+adam_beats_1 = 0.9
+adam_beats_2 = 0.999
+weight_decay = 0.0
+
+# Model parameters
+d_model = 128
+d_channel = 8
+dff = 512
+num_layers = 3
+num_heads = 8
+dropout = 0.1
+mine_hidden_dim = 256
+club_hidden_dim = 64
+club_num_layers = 1
+club_num_heads = 4
+
+# Dataset parameters
+len_max = 30
+fixed_padding = True
+
+# Training set parameters
+init = True
+batch_size = 384
+epochs = 60
+data_config_num = 0
+num_syn_token = 2
+p_sent = 0.5
+p_token = 0.2

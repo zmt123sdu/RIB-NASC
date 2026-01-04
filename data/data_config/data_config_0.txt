@@ -1,0 +1,4 @@
+syn_vocab_name = bert-base-uncased(word_embedding_only)_syn_idx_vocab
+num_syn_token = 5
+syn_th = 0.5
+seed = 3407

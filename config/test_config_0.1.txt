@@ -1,0 +1,32 @@
+# Compared to test_config_0, d_channel = 4
+# Basic parameters
+test_batch_size = 384
+test_loop = 2
+power_tx = 1.0
+seed = 3407
+
+# Model basic parameters
+d_model = 128
+d_channel = 4
+dff = 512
+num_layers = 3
+num_heads = 8
+dropout = 0.1
+mine_hidden_dim = 256
+club_hidden_dim = 64
+club_num_layers = 1
+club_num_heads = 4
+
+# Traditional scheme parameters
+modulation_order = 4
+ldpc_design_file_path = wimax/1440.720.txt
+ldpc_decoder_algorithm = MSA
+ldpc_n_iters = 10
+
+# Dataset parameters
+len_max = 30
+fixed_padding = True
+
+# Testing set parameters
+pretrained_model_name = all-roberta-large-v1
+sim_cal_bs = 1024
